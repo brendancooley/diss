@@ -1,0 +1,42 @@
+---
+title: "Trade Policy in the Shadow of Power: Theory and Evidence on Economic Openness and Coercive Diplomacy"
+author: "Brendan Cooley"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+header-includes:
+   - \usepackage{bm}
+   - \usepackage{bbm}
+   - \usepackage{scalerel}
+bibliography: bib/library.bib
+biblio-style: apsr
+nocite: |
+  @Bukiet1997, @Groseclose2005, @Hill2015, @Imai2016, @Smith2016, @Goplerud2019
+fancy: true
+geometry: margin=1in
+latex_engine: pdflatex
+---
+
+```{r libs, echo=FALSE, warning=FALSE, message=FALSE, results='hide'}
+
+helperPath <- "~/Dropbox (Princeton)/14_Software/R/"
+helperFiles <- list.files(helperPath)
+for (i in helperFiles) {
+  source(paste0(helperPath, i))
+}
+
+libs <- c("knitr", "tidyverse", "bibtex")
+ipak(libs)
+
+Sys.setenv(KMP_DUPLICATE_LIB_OK="True")
+
+# setup bib
+mkdir("bib/")
+file.copy("~/Dropbox (Princeton)/References/library.bib", "bib/library.bib", overwrite=TRUE)
+
+```
+
+```{r, child="chapters/introduction.md"}
+```
+
+\clearpage
+
+# References

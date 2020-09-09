@@ -1,0 +1,80 @@
+\documentclass{puthesis}
+
+\usepackage{epsfig}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}   
+\usepackage{amsthm}
+\usepackage{latexsym}
+
+\usepackage{nohyperref}
+\usepackage{url}
+\usepackage{bm}
+\usepackage{xparse}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{epigraph}
+
+\renewcommand{\epigraphsize}{\small}
+
+\setlength{\epigraphwidth}{0.8\textwidth}
+
+\renewcommand{\textflush}{flushright} \renewcommand{\sourceflush}{flushright}
+
+\let\originalepigraph\epigraph 
+\renewcommand\epigraph[2]{\originalepigraph{#1}{\textsc{#2}}}
+
+% set font
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pifont}
+\usepackage{newunicodechar}
+\newunicodechar{✓}{\ding{51}}
+\newunicodechar{✗}{\ding{55}}
+
+% argmax/argmin
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% add ubar command
+\usepackage{accents}
+\DeclareRobustCommand{\ubar}[1]{\underaccent{\bar}{#1}}
+
+% Expectation, Variance, Covariance
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+
+% https://github.com/rstudio/rmarkdown/issues/1649
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
+
+\NewDocumentCommand{\evalat}{sO{\big}mm}{%
+  \IfBooleanTF{#1}
+   {\mleft. #3 \mright|_{#4}}
+   {#3#2|_{#4}}%
+}
+
+\makeatletter\def\Hy@xspace@end{}\makeatother
+
+\title{$title$}
+\submitted{$submitted$}  %graduation date
+\author{$author$}
+\abstract{$abstract$}
+\adviser{$adviser$}
+\acknowledgements{$acknow$}
+
+\begin{document}
+
+$body$
+
+\end{document}

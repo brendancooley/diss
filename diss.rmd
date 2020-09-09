@@ -1,0 +1,82 @@
+---
+title: | 
+	| Trade Policy in the Shadow of Power
+	| \tiny \hfill
+    | \Large Theory and Evidence on Economic Openness and Coercive Diplomacy
+author: Brendan Michael Cooley
+adviser: Kristopher W. Ramsay
+submitted: November 2020
+abstract: This dissertation studies military coercion in the international political economy. I develop a framework to study how power politics affects the international economy and how conflicts of interest over economic policy affect states' propensity to fight wars with one another. I begin by building a theoretical model of "gunboat diplomacy," in which wars can be fought in order to open markets abroad. The shadow of military power liberalizes trade policy, and more protectionist governments are more likely to experience war. I then introduce an empirical model to measure the magnitude of policy-induced trade frictions, which I estimate on data describing trade flows, price levels, and freight costs in 2011. Finally, I rationalize the emergence of these barriers as the outcome of an $N$-country coercive bargaining game, in order to quantify empirically the effect of military coercion on international trade. In the aggregate, military coercion increases the value of global trade by 63 percent, suggesting that international power politics exerts substantial influence on the workings of the international economy.
+acknow: |
+	`r paste(readLines('chapters/acknowledgements.md'), collapse=' ')`
+
+bibliography: bib/library.bib
+
+---
+
+```{r libs, echo=FALSE, warning=FALSE, message=FALSE, results='hide'}
+
+helperPath <- "~/Dropbox (Princeton)/14_Software/R/"
+helperFiles <- list.files(helperPath)
+for (i in helperFiles) {
+  source(paste0(helperPath, i))
+}
+
+libs <- c("knitr", "tidyverse", "bibtex")
+ipak(libs)
+
+Sys.setenv(KMP_DUPLICATE_LIB_OK="True")
+
+# setup bib
+mkdir("bib/")
+file.copy("~/Dropbox (Princeton)/References/library.bib", "bib/library.bib", overwrite=TRUE)
+
+```
+
+\addcontentsline{toc}{chapter}{Introduction}
+
+\chapter*{Introduction}
+
+```{r, child="chapters/introduction.md"}
+```
+
+\chapter[Gunboat Diplomacy: Political Bias, Trade Policy, and War]{Gunboat Diplomacy \\ \Large Political Bias, Trade Policy, and War}
+
+```{r, child="chapters/gunboats_short.md"}
+```
+
+\chapter{Estimating Policy Barriers to Trade}
+
+```{r, child="chapters/epbt_short.md"}
+```
+
+\chapter[Trade Policy in the Shadow of Power: Quantifying Military Coercion in the International System]{Trade Policy in the Shadow of Power \\ \Large Quantifying Military Coercion in the International System}
+
+```{r, child="chapters/tpsp_short.md"}
+```
+
+\clearpage
+
+\chapter*{Software}
+
+\addcontentsline{toc}{chapter}{Software}
+
+\sloppy
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results="asis"}
+
+gunboats_bib <- read.bib("bib/gunboats.bib")
+epbt_bib <- read.bib("bib/epbt.bib")
+tpsp_bib <- read.bib("bib/tpsp.bib")
+python_bib <- read.bib("bib/python.bib")
+
+c(gunboats_bib, epbt_bib, tpsp_bib, python_bib) %>% unique() %>% sort()
+
+```
+
+\chapter*{References}
+
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{plain}
+\bibliography{bib/library.bib}
+
