@@ -1,0 +1,296 @@
+---
+title: "Trade Policy in the Shadow of Power"
+subtitle: "Theory and Evidence on Economic Openness and Coercive Diplomacy"
+author: "Brendan Cooley"
+institute: "Princeton University"
+date: "5 October 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), 'index.html')) })
+---
+
+```{css, echo=FALSE}
+
+.remark-slide-content ul ul,
+.remark-slide-content ul ol,
+.remark-slide-content ol ol,
+.remark-slide-content ol ul {
+  color: #808080 ; /*grey out sub text*/
+  font-size: .9em;
+  padding-left: 1em;
+  display: block;
+  margin-left: 40px; }
+
+a, a > code {
+  color: #EB811B;
+  text-decoration: none;
+}
+
+.reduced-size h1 {
+  font-size: 20px;
+}
+
+```
+
+```{r, echo=FALSE}
+
+```
+
+# Why War?
+
+**War's Consequences**
+
+- Direct: lives lost, property destroyed, productive resources reallocated
+- Indirect: wars confer political powers on victors
+  + Today's global governance institutions established and propagated by World War II victors (Ikenberry 2011)
+- Costs of anarchy (Fearon 2018)
+  + Military expenditure: 2.2 percent world GDP (2019, [SIPRI](https://www.sipri.org/media/press-release/2020/global-military-expenditure-sees-largest-annual-increase-decade-says-sipri-reaching-1917-billion))
+
+--
+
+**The Bargaining Model**
+
+> Most conflict situations are essentially *bargaining* situations
+>
+>  -- Thomas Schelling, *The Strategy of Conflict*
+
+- War results from bargaining frictions (Fearon 1995):
+  + Variation in war's propensity explained by variation in magnitude of bargaining frictions (power shifts and information asymmetries)
+- Some *conflict of interest* assumed by the model
+  + Little attention paid to where conflicts of interest come from, variation in intensity across dyads
+
+---
+class: inverse, center, middle, reduced-size
+
+# What is the bargaining and fighting *about*?
+
+---
+
+# The "Pie": Territory?
+
+**A Representative Formulation**
+
+> Consider a situation where two states are involved in a dispute...
+
+--
+
+> We conceptualize the conflict as occuring over a divisible item of unit size, **such as an area of territory or an allocation of resources**.
+
+--
+
+>  -- Fey and Ramsay 2011
+
+--
+
+**Governments as Territory-Maximizers?**
+
+- 1945-Present: Territorial disputes are rare and circumscribed in their extent (Schultz and Goemans 2019)
+- 1914-1945: Allied victors of world wars decline to seize territory of their wartime enemies
+- 1815-1914: Imperial conquest and spheres of influence common, colonial powers often refrain from directly exploiting colonies' land
+  + British in India, treaty ports in Qing China, Perry expeditions, Japan and Russia in Manchuria
+
+--
+
+**Then why war and conquest?**
+
+---
+class: inverse
+
+**An Alternative Account**
+
+> Historically, great power competition has been driven primarily by exclusion or fears  of exclusion from each power's **international economic zone,** including its domestic markets. 
+
+--
+
+> Great powers in the past have often used their international influence to build zones in which **subordinate polities** -- whether these be colonies or simply states within a sphere of influence -- **are integrated into their economies.**
+
+--
+
+> These economic zones, in turn, are typically biased in favor of the great power's firms and investors, with the effect of **excluding (in whole or part) the economic agents of other great powers.**
+
+--
+
+> -- Lake 2018, "Economic Openness and Great Power Competition"
+
+---
+class: inverse, center, middle, reduced-size
+
+# **Theory** and **Evidence** on Economic Openness and Coercive Diplomacy
+
+---
+
+# Theory
+
+**Conflicts of Interest: Commercial Policy and its Economic Effects**
+
+- Firm lobbying produces **mercantilist** governments, seeking
+  + protectionism at home
+  + trade openness abroad
+- Market access externality: protectionism **shifts profit opportunities** from foreign to home firms (Ossa 2012)
+  + Trade policy generates conflicts of interest between mercantilist governments
+
+--
+
+**Bargaining in Anarchy**
+
+- Efforts to pursue market openness abroad can take the form of **threats, displays, and uses of military force**
+- Peacetime institutions facilitating economic subordination: **empires, hegemonies, hierarchies**
+  + Supported by implicit threat of force
+  
+---
+
+# Paper I
+
+.center[**Gunboat Diplomacy: Political Bias, Trade Policy, and War**]
+
+- Actors: Two governments
+  + *Liberal* governments value welfare of consumers
+  + *Illiberal* governments value firm profits
+- Interactions
+  + Government 1: makes take-it-or-leave-it-offer offer (pair of tariffs) to government 2
+  + Government 2: accept or declare war
+
+--
+
+**Incentives**
+
+- War and Regime Change
+  + War fought to impose liberal "puppet" abroad that implements free trade
+- Market access increases profits for home firms
+
+--
+
+**Result I:** Liberal governments less likely to fight wars
+
+--
+
+**Result II:** Powerful governments adopt higher tariffs than weaker counterparts
+
+--
+
+.center[**Endogenous commercial peace: liberal government trade more and fight less**]
+  
+---
+class: inverse, middle, reduced-size
+
+# Microfoundations of international conflict: influence of politically-connected, export-oriented firms on "security" policy
+
+> Since trade ignores national boundaries and the manufacturer insists on having the world as a market, the flag of his nation must follow him, and the doors of the nations which are closed must be battered down
+>
+> -- Woodrow Wilson, 1907 (Williams, *The Tragedy of American Diplomacy*)
+
+<hr>
+
+.center[**Foreign policy as commercial policy**]
+  
+---
+class: middle, inverse
+
+# Evidence?
+
+.center[**Coercion's effects on the international economy**]
+
+**Measurement:** Quantifying trade policy
+
+- Aggregate magnitude of policy-induced trade distortions, margins of preferential access
+
+**Inference:** Power vs. Preferences
+
+- What trade policies would governments' adopt in the absence of coercion?
+
+---
+
+# Paper II
+
+.center[**Estimating Policy Barriers to Trade**]
+
+**Varieties of Trade Barriers**
+
+- Direct: tariffs, quotas, price controls, health and safety regulations, technical barriers to trade
+- Indirect: government procurement rules, firm subsidies, excise taxes, domestic regulations
+
+--
+
+**Model**
+
+- Trade flows, cross-national price levels, and freight costs are sufficient statistics for aggregate magnitude of policy barriers to trade
+
+--
+
+**Results**
+
+- Policy induced barriers to trade an **order of magnitude larger than tariffs**
+- Developed countries enjoy superior market access conditions abroad
+
+---
+
+# Paper III
+
+.center[**Trade Policy in the Shadow of Power: Quantifying Military Coercion in the International System**]
+
+- $N$-government extension of "gunboats"
+- Costs of war depend on observable dyadic features
+  + Military expenditure ratio
+  + Geographic distance
+- Equilibrium trade policies depend on governments' preferences and costs of coercion
+
+--
+
+**Estimation:** Estimate model on observed government trade policies, measured in Paper II
+
+--
+
+**Results:**
+
+- Returns to military advantage
+- No geographic loss of strength gradient
+
+--
+
+**Counterfactual: A Coercion-Free World**
+
+- Coercion increases value of global trade by 60 percent
+
+---
+class: middle, inverse
+
+# Conclusions
+
+**International Security Studies**
+
+- Taking conflicts of interest seriously 
+  + Variation in trade policy orientation drives foreign policy behavior
+  + War propensity and incentives for military expenditure depend on foreign and domestic trade policy preferences
+
+**International Political Economy**
+
+- Constraints of anarchy and trade policy
+  + Trade openness a function of domestic preferences and foreign coercion
+  + Observed trade policies are not a sufficient statistics for underlying trade preferences
+
+---
+class: middle, inverse
+
+> The relationship between economics and politics...is a reciprocal one. On the one hand, politics largely determines the framework of economic activity and channels it in directions intended to serve the interests of dominant groups; <br /> the exercise of power in all its forms is a major determinant of the nature of an economic system. On the other hand, the economic process itself tends to redistribute power and wealth; it transforms the power relationships among groups.
+>
+> --Robert Gilpin, *U.S. Power and the Multinational Corporation*
+
+---
+class: middle, inverse
+
+> The relationship between economics and politics...is a reciprocal one. On the one hand, **politics largely determines the framework of economic activity and channels it in directions intended to serve the interests of dominant groups;** <br /> the exercise of power in all its forms is a major determinant of the nature of an economic system. On the other hand, the economic process itself tends to redistribute power and wealth; it transforms the power relationships among groups.
+>
+> --Robert Gilpin, *U.S. Power and the Multinational Corporation*
+
+---
+class: middle, inverse
+
+> The relationship between economics and politics...is a reciprocal one. On the one hand, politics largely determines the framework of economic activity and channels it in directions intended to serve the interests of dominant groups; <br /> the exercise of power in all its forms is a major determinant of the nature of an economic system. On the other hand, **the economic process itself tends to redistribute power and wealth; it transforms the power relationships among groups.**
+>
+> --Robert Gilpin, *U.S. Power and the Multinational Corporation*
