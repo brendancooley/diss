@@ -153,7 +153,7 @@ class: inverse, center, middle, reduced-size
   + *Liberal* governments value welfare of consumers
   + *Illiberal* governments value firm profits
 - Interactions
-  + Government 1: makes take-it-or-leave-it-offer offer (pair of tariffs) to government 2
+  + Government 1: makes take-it-or-leave-it offer (pair of tariffs) to government 2
   + Government 2: accept or declare war
 
 --
